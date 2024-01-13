@@ -54,6 +54,9 @@ for x in range(10):
 3--> Scissors
 """))
     user_choice = user_choice-1
+    if user_choice<0 or user_choice>3:
+        print("You chose an invalid option")
+        exit()
 
     wiz_choice = random.randint(0,2)
     hMap = {0:"Rock",1:"Paper",2:"Scissors"}
