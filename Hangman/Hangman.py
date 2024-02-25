@@ -80,7 +80,7 @@ while not end_of_game and "_" in display:
         chances -= 1
 
     print(f"Chances left = {chances}")
-    print(display)
+    print("".join(display))
     if chances <= 0: end_of_game = True
     print(stages[chances])
 
@@ -88,3 +88,4 @@ if "_" in display:
     print("Sorry but you lost !")
 else:
     print("You win !")
+    end_of_game = True
