@@ -3,7 +3,6 @@ import time
 
 # start = time.time()
 word_list = ["advark","baboon","camel"]
-# Testing
 stages = ['''
   +---+
   |   |
