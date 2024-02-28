@@ -5,9 +5,6 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
             'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 print(art.logo)
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n>>> ")
-text = input("Type your message:\n>>> ").lower()
-shift = int(input("Type the shift number:\n>>> "))
 
 
 def caesar(shift_amt, dir, input_text):
@@ -27,16 +24,21 @@ def caesar(shift_amt, dir, input_text):
         else:
             cipher_text += letter
     print(f"The {dir}d text is : {cipher_text}")
+
+
+repeat = True
+while repeat:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n>>> ")
+    text = input("Type your message:\n>>> ").lower()
+    shift = int(input("Type the shift number:\n>>> "))
+    caesar(dir=direction, input_text=text, shift_amt=shift)
+
     repeat = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n>>> ")
+
     if repeat == 'yes':
-        direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n>>> ")
-        text = input("Type your message:\n>>> ").lower()
-        shift = int(input("Type the shift number:\n>>> "))
-        caesar(dir=direction, input_text=text, shift_amt=shift)
-
-
-caesar(dir=direction, input_text=text, shift_amt=shift)
-
+        repeat = True
+    else:
+        print("Goodbye !")
 
 # def encrypt(text,shift):
 #     cipher_text = ""
