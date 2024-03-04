@@ -10,7 +10,7 @@ Clone the Repository: Clone this repository to your local machine using the foll
 
 bash
 Copy code
-git clone https://github.com/your-username/100-days-of-python-projects.git
+>>> git clone https://github.com/MadhumithaKolkar/100_Days_Of_Python.git
 
 Explore the Projects: Browse through the projects directory to explore the different Python projects available. Each project is contained within its own directory and comes with a detailed README.md file explaining the project's objectives, requirements, and instructions.
 
