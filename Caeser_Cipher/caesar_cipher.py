@@ -8,6 +8,15 @@ print(art.logo)
 
 
 def caesar(shift_amt, dir, input_text):
+
+    """
+    The function that encodes/decodes the text provided by the user and returns the modified text.
+
+    :param shift_amt: The amount the user wants the shift to be of.
+    :param dir: The direction given by the user.
+    :param input_text: The text that needs to be encoded/decoded.
+    :return: The encoded/decoded text.
+    """
     cipher_text = ""
     new_shift_amt = 0
 
