@@ -15,6 +15,7 @@ def subtract(num1, num2):
 
 
 def multiply(num1, num2):
+    """Multiples two user specified numbers and returns the product."""
     return num1 * num2
 
 
