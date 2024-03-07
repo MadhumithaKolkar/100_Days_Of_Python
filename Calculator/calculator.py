@@ -20,6 +20,7 @@ def multiply(num1, num2):
 
 
 def divide(num1, num2):
+    """Divides num1 by num2 and returns the output. Rounds the output to two decimal points."""
     return round((num1 / num2), 2)
 
 
