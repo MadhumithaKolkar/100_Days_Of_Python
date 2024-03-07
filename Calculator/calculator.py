@@ -5,6 +5,7 @@ print(art.logo)
 
 
 def add(num1, num2):
+    """Adds two numbers specified by user and return the sum."""
     return num1 + num2
 
 
