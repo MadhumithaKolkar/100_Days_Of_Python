@@ -10,6 +10,7 @@ def add(num1, num2):
 
 
 def subtract(num1, num2):
+    """Subtracts num2 from num1 and return the remainder."""
     return num1 - num2
 
 
